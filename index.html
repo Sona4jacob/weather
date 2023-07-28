@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="./styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body class="container">
+    <nav class="container navbar-expand p-4">
+      <div class="container-fluid">
+        <form class="d-flex container" role="search">
+          <input
+          id="Locate"
+            class="form-control me-2"
+            type="search"
+            placeholder="Search Location"
+            aria-label="Search"/>
+          <button
+            onclick="searchLocation()"
+            class="btn btn-outline-light"
+            type="button"
+          >
+            <i class="fa-solid fa-magnifying-glass-location fa-xl"></i>
+          </button>
+        </form>
+      </div>
+    </nav>
+    <button id="demo" onclick="getLocation()" type="submit" class="btn btn-outline-light bt1">
+      use current location
+    </button>
+    <div class="card container c1" style="width: 18rem">
+      <div class="card-body">
+        <h5 class="card-title p-4" id="loc"></h5>
+        <h3>weather </h3>
+        <h1 class="card-subtitle mb-2 text-body-secondary p-4" id="temp">
+          <i class="fa-solid fa-cloud-sun fa-2xl"></i><br /><br />
+        </h1>
+        <h6 class="card-subtitle mb-2 text-body-secondary" id="cloud">
+          
+        </h6>
+      </div>
+    </div>
+    <div class="row p-4">
+      <div class="col-lg-3 col-md-6 sm-12">
+        <div class="card c2 text-center p-4">
+          <div class="card-header" >pressure</div>
+          <div class="card-body">
+            <br />
+            <h5 class="card-title">
+              <i class="fa-solid fa-temperature-low fa-2xl"></i>
+            </h5><br>
+            <h5 class="card-title" id="pressure"></h5>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-3 col-md-6 sm-12">
+        <div class="card c2 text-center p-4">
+          <div class="card-header">humidity</div>
+          <div class="card-body">
+            <br />
+            <h5 class="card-title">
+              <i class="fa-solid fa-snowflake fa-2xl"></i>
+            </h5><br>
+            <h5 class="card-title" id="humidity"></h5>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-3 col-md-6 sm-12">
+        <div class="card c2 text-center p-4">
+          <div class="card-header">Wind-speed</div>
+          <div class="card-body">
+            <br />
+            <h5 class="card-title"><i class="fa-solid fa-wind fa-2xl"></i></h5><br>
+            <h5 class="card-title " id="windSpeed"></h5>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-3 col-md-6 sm-12">
+        <div class="card c2 text-center p-4">
+          <div class="card-header">sea-level</div>
+          <div class="card-body">
+            <br />
+            <h5 class="card-title">
+              <i class="fa-brands fa-digital-ocean fa-2xl"></i>
+            </h5><br>
+            <h5 class="card-title" id="sea1"></h5>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </body>
+  <script src="script.js"></script>
+
+</html>

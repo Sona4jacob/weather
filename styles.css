@@ -1,0 +1,56 @@
+@import url('https://fonts.googleapis.com/css2?family=Akronim&family=Caveat&family=Cinzel&family=Monoton&family=Playfair+Display&family=Smokum&family=Uncial+Antiqua&display=swap');
+body{
+    background-image: url(./img/tree-832079_1280.jpg);
+    background-repeat: no-repeat;
+    background-blend-mode: darken;
+    background-size:cover ;
+}
+.card{
+    font-family: cinzel;
+    text-align: center;
+    background-color: rgba(128, 128, 128, 0.422);
+}
+.c1{
+    margin-top: 50px;
+}
+.c1:hover{
+    box-shadow:  0px 0px 10px black;
+    transform: scale(1.08);
+}
+.form-control {
+    display: block;
+    width: 100%;
+    padding: 0.375rem 0.75rem;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color:white;
+    background-color: #ffffff61;
+    background-clip: padding-box;
+    border: var(--bs-border-width) solid var(--bs-border-color);
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    border-radius: var(--bs-border-radius);
+    transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+}
+.form-control::placeholder{
+    color: aliceblue;
+}
+.c1 i{
+    color: #fffffffe;
+    font-size: 60px;
+}
+.row .card{
+    box-shadow:  0px 0px 10px black;
+    float: left;
+    text-align: center;
+}
+.c2{
+    border: 15px solid #ffffff2c;
+    color: white;
+}
+.bt1{
+    font-family: cinzel;
+    margin-left: 40%;
+}
